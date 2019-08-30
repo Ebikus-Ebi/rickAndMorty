@@ -4,9 +4,12 @@
 
 }
 
+/*.bg-light{
+	background-color: black !important;
+}*/
 .body{
    font-family: 'Poppins', sans-serif;
-   background: #333;
+   background: rgb(32, 35, 41);
   /*font: 16px*/
   /*padding: 48px 0px 0px;*/
   }
@@ -42,6 +45,10 @@ background: #333;
 	box-sizing: border-box;
 	cursor: pointer;
 	color: white
+}
+
+.row{
+	background-color: rgb(32, 35, 41);
 }
 	
 .header .name{
@@ -117,11 +124,35 @@ background: #333;
 	outline: none;
 }
 
+.card-body{
+	background: black;
+	color: white;
+	/*opacity: 0.5;
+  	filter: alpha;  For IE8 and earlier 
+	opacity: 0;*/
+}
+
 .square{
 	width: 100%;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
 }
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
 
 // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
